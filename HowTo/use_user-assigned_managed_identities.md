@@ -3,10 +3,7 @@
 > **NOTE**:
 >
 > - These instructions only apply to Linux based containers configurations.
-> - The Webapp and the Azure Container registry must be on the same azure subscription
->   - Accessing a container registry on a different subscription is currently **not supported**.
-> - The Azure Container registry must be internet accessible.
->   - Pulling container images through a Private Link / Private endpoint connection is currently **not supported**.
+> - See the following [link](https://azure.github.io/AppService/2021/07/03/Linux-container-from-ACR-with-private-endpoint.html#using-user-assigned-managed-identity) for deployment scenarios when pulling from private registry over VNET. 
 
 App Service can use **user-assigned** [managed identities](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to authenticate against **Azure Container Registry (ACR)** and perform `docker pull` operation.
 
